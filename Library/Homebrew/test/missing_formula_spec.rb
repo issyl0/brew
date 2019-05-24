@@ -115,5 +115,15 @@ describe Homebrew::MissingFormula do
 
       it { is_expected.to be_nil }
     end
+
+    context "not on MacOS" do
+      before do
+        allow(OS).to receive(:mac?).and_return(false)
+      end
+
+      it "doesn't call cask_reason" do
+        expect(described_class).to_not receive(:cask_reason)
+      end
+    end
   end
 end
