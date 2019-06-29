@@ -936,6 +936,24 @@ module Homebrew
 
       return unless @strict
 
+      uses_from_macos_whitelist = %w[
+        perl
+        php
+        python@2
+        ruby
+      ].freeze
+
+      if line =~ /uses_from_macos (["'](.+)["'])/
+        begin
+          macos_f = Formulary.factory(Regexp.last_match(2))
+          if macos_f.keg_only_reason&.reason != :provided_by_macos || uses_from_macos_whitelist.exclude?(macos_f.name)
+            problem "`uses_from_macos` should only be used for software provided by macOS."
+          end
+        rescue FormulaUnavailableError
+          problem "`uses_from_macos` dependency #{Regexp.last_match(2)} doesn't exist."
+        end
+      end
+
       problem "`env :userpaths` in formulae is deprecated" if line.include?("env :userpaths")
 
       if line =~ /system ((["'])[^"' ]*(?:\s[^"' ]*)+\2)/
