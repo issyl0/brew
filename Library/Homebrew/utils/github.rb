@@ -54,11 +54,15 @@ module GitHub
             #{Formatter.url("https://github.com/settings/tokens")}
         EOS
       else
+        if OS.mac?
+          message << <<~EOS
+            The GitHub credentials in the macOS keychain may be invalid.
+            Clear them with:
+              printf "protocol=https\\nhost=github.com\\n" | git credential-osxkeychain erase
+          EOS
+        end
         message << <<~EOS
-          The GitHub credentials in the macOS keychain may be invalid.
-          Clear them with:
-            printf "protocol=https\\nhost=github.com\\n" | git credential-osxkeychain erase
-          Or create a personal access token:
+          You may need to create a personal access token:
             #{ALL_SCOPES_URL}
           #{Utils::Shell.set_variable_in_profile("HOMEBREW_GITHUB_API_TOKEN", "your_token_here")}
         EOS
