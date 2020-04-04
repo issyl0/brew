@@ -238,6 +238,21 @@ module Homebrew
         expect(fa.problems.shift)
           .to eq('Use pkgshare instead of (share/"foolibc++")')
       end
+
+      specify "uses_from_macos" do
+        fa = formula_auditor "foo", <<~RUBY, strict: true
+          class Foo < Formula
+            url "https://brew.sh/foo-1.0.tgz"
+
+            uses_from_macos "postgresql"
+            uses_from_macos "zlib"
+          end
+        RUBY
+
+        fa.line_problems 'uses_from_macos "postgresql"', 3
+        expect(fa.problems.shift)
+          .to eq('`uses_from_macos` should only be used for software provided by macOS, not postgresql.')
+      end
     end
     # rubocop:enable Lint/InterpolationCheck
 
