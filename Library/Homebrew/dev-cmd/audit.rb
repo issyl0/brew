@@ -946,7 +946,7 @@ module Homebrew
       if line =~ /uses_from_macos (["'](.+)["'])/
         begin
           macos_f = Formulary.factory(Regexp.last_match(2))
-          if macos_f.keg_only_reason&.reason != :provided_by_macos || uses_from_macos_whitelist.exclude?(macos_f.name)
+          if macos_f.keg_only_reason&.reason != :provided_by_macos && !uses_from_macos_whitelist.include?(macos_f.name)
             problem "`uses_from_macos` should only be used for software provided by macOS."
           end
         rescue FormulaUnavailableError
