@@ -251,7 +251,7 @@ module Homebrew
 
         fa.line_problems 'uses_from_macos "postgresql"', 3
         expect(fa.problems.shift)
-          .to eq('`uses_from_macos` should only be used for software provided by macOS, not postgresql.')
+          .to eq("`uses_from_macos` should only be used for software provided by macOS, not postgresql.")
       end
     end
     # rubocop:enable Lint/InterpolationCheck
