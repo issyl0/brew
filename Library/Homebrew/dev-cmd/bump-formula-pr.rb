@@ -50,8 +50,7 @@ module Homebrew
       flag   "--message=",
              description: "Append <message> to the default pull request message."
       flag   "--url=",
-             description: "Specify the <URL> for the new download. If a <URL> is specified, the <SHA-256> "\
-                          "checksum of the new download should also be specified."
+             description: "Specify the <URL> for the new download."
       flag   "--sha256=",
              depends_on:  "--url=",
              description: "Specify the <SHA-256> checksum of the new download."
