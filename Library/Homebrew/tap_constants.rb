@@ -1,4 +1,3 @@
-# typed: true
 # frozen_string_literal: true
 
 # match taps' formulae, e.g. someuser/sometap/someformula

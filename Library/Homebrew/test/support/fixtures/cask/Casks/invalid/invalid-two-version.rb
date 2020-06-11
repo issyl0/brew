@@ -1,4 +1,3 @@
-# typed: false
 cask 'invalid-two-version' do
   version '1.2.3'
   version '2.0'

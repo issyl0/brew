@@ -1,4 +1,3 @@
-# typed: ignore
 # frozen_string_literal: true
 
 raise "HOMEBREW_BREW_FILE was not exported! Please call bin/brew directly!" unless ENV["HOMEBREW_BREW_FILE"]

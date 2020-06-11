@@ -1,4 +1,3 @@
-# typed: ignore
 # frozen_string_literal: true
 
 if ENV["HOMEBREW_TESTS_COVERAGE"]

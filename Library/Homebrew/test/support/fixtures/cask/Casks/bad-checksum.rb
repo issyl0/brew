@@ -1,4 +1,3 @@
-# typed: false
 cask 'bad-checksum' do
   version '1.2.3'
   sha256 'badbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadbadb'

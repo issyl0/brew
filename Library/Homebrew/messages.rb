@@ -1,4 +1,3 @@
-# typed: false
 # frozen_string_literal: true
 
 # A Messages object collects messages that may need to be displayed together

@@ -1,4 +1,3 @@
-# typed: false
 cask 'sourceforge-version-latest-correct-url-format' do
   version :latest
 

@@ -1,4 +1,3 @@
-# typed: true
 # frozen_string_literal: true
 
 # Livecheck can be used to check for newer versions of the software.

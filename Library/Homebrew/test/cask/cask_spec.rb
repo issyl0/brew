@@ -1,4 +1,3 @@
-# typed: ignore
 # frozen_string_literal: true
 
 describe Cask::Cask, :cask do

@@ -1,4 +1,3 @@
-# typed: false
 cask 'missing-name' do
   version '1.2.3'
 

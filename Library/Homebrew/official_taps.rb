@@ -1,4 +1,3 @@
-# typed: true
 # frozen_string_literal: true
 
 OFFICIAL_CASK_TAPS = %w[

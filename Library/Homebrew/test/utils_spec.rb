@@ -1,4 +1,3 @@
-# typed: ignore
 # frozen_string_literal: true
 
 describe "globally-scoped helper methods" do

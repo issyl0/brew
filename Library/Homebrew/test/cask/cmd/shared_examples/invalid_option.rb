@@ -1,4 +1,3 @@
-# typed: false
 # frozen_string_literal: true
 
 shared_examples "a command that handles invalid options" do

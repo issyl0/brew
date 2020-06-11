@@ -1,4 +1,3 @@
-# typed: false
 # frozen_string_literal: true
 
 cask "with-depends-on-macos-comparison" do

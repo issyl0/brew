@@ -1,4 +1,3 @@
-# typed: false
 # frozen_string_literal: true
 
 describe "brew bundle", :integration_test, :needs_test_cmd_taps do

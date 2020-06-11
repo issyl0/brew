@@ -1,4 +1,3 @@
-# typed: ignore
 # frozen_string_literal: true
 
 require "dev-cmd/audit"
