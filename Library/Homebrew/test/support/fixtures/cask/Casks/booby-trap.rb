@@ -1,3 +1,4 @@
+# typed: false
 cask 'booby-trap' do
   version '0.0.7'
 

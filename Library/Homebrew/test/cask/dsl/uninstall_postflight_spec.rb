@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 require "test/cask/dsl/shared_examples/base"

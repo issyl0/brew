@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 # `brew uses foo bar` returns formulae that use both foo and bar

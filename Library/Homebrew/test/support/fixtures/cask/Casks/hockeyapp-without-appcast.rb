@@ -1,3 +1,4 @@
+# typed: false
 cask 'hockeyapp-without-appcast' do
   version '1.0,123'
   sha256 'a69e7357bea014f4c14ac9699274f559086844ffa46563c4619bf1addfd72ad9'

@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 # TODO: this test should be named after the corresponding class, once

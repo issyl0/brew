@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 # Cleans a newly installed keg.

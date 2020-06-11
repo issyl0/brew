@@ -1,3 +1,4 @@
+# typed: false
 cask 'sourceforge-with-appcast' do
   version '1.2.3'
 

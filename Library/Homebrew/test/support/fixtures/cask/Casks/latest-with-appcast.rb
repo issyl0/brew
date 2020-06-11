@@ -1,3 +1,4 @@
+# typed: false
 cask 'latest-with-appcast' do
   version :latest
   sha256 :no_check

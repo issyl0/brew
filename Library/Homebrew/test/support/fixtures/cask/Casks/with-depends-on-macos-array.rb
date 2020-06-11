@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 cask "with-depends-on-macos-array" do

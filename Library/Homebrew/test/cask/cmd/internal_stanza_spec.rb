@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 describe Cask::Cmd::InternalStanza, :cask do

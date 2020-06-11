@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 HOMEBREW_HELP = <<~EOS

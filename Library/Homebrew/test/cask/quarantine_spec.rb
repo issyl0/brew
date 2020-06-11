@@ -1,3 +1,4 @@
+# typed: ignore
 # frozen_string_literal: true
 
 describe Cask::Quarantine, :cask do

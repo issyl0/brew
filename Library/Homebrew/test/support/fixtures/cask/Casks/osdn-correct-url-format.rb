@@ -1,3 +1,4 @@
+# typed: false
 cask 'osdn-correct-url-format' do
   version '1.2.3'
 
