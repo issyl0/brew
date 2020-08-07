@@ -21,6 +21,11 @@ jobs:
         with:
           username: BrewTestBot
 
+      - name: Install Ruby and Bundler
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.3
+
       - name: Update Tapioca Definitions
         run: |
           bundle exec tapioca sync --exclude json
