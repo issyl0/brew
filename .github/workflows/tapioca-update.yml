@@ -10,10 +10,10 @@ env:
   HOMEBREW_SORBET: 1
 jobs:
   update-tapioca:
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        version: [10.15, 10.14, 10.13]
-    runs-on: ${{ matrix.version }}
+        os: macOS-latest
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
