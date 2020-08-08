@@ -14,9 +14,9 @@ gem "rspec-wait", require: false
 gem "rubocop"
 gem "simplecov", require: false
 if ENV["HOMEBREW_SORBET"]
-  gem "sorbet", "0.5.5823"
-  gem "sorbet-runtime", "0.5.5823"
-  gem "tapioca"
+  gem "sorbet"
+  gem "sorbet-runtime"
+  gem "tapioca", github: "Shopify/tapioca", ref: "37bb4f3"
 end
 
 # vendored gems
