@@ -126,6 +126,8 @@ module Homebrew
 
     format_flag, format_desc = target_path_to_format(target)
 
+    odie "`ronn` command not found, can't write man pages." if Utils.popen_read("ronn").blank?
+
     puts "Writing #{format_desc} to #{target}"
     Utils.popen(["ronn", format_flag] + shared_args, "rb+") do |ronn|
       ronn.write markup
